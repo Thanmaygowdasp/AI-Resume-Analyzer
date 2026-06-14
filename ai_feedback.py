@@ -14,6 +14,7 @@ model = genai.GenerativeModel(
 
 def get_ai_feedback(text):
 
+    print("Step1")
     prompt = f"""
     You are an expert resume reviewer.
 
@@ -41,3 +42,5 @@ def get_ai_feedback(text):
             ⚠️ Gemini API Limit Reached
             Please wait a minute and try again.
             """
+        
+    
