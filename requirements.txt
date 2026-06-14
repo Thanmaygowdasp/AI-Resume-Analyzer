@@ -1,0 +1,7 @@
+streamlit
+pypdf
+pandas
+plotly
+google-generativeai
+reportlab
+python-dotenv
