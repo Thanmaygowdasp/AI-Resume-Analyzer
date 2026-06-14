@@ -272,10 +272,16 @@ if st.button("🚀 Analyze Resume"):
 
         st.subheader("🤖 Gemini AI Feedback")
 
-        with st.spinner("Analyzing Resume..."):
+        try:
 
-            feedback = get_ai_feedback(text)
+            with st.spinner("Analyzing Resume..."):
 
-        st.success("Analysis Complete")
+                feedback = get_ai_feedback(text)
 
-        st.write(feedback)
+            st.success("Analysis Complete")
+
+            st.write(feedback)
+
+        except Exception as e:
+
+            st.error(f"Gemini Error: {e}")
